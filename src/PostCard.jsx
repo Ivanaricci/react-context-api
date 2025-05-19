@@ -1,11 +1,11 @@
 import React from 'react'
 
-const PostCard = () => {
+const PostCard = ({ post }) => {
     return (
         <div>
-            <h1>Title</h1>
-            <p>Categoria</p>
-            <p>Testo(content)</p>
+            <h1>{post.title}</h1>
+            <p>{post.category}</p>
+            <p>{post.content}</p>
         </div>
     )
 }
