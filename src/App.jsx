@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import PostsContext from './Context'
 
 
 const posts = [
@@ -29,7 +30,9 @@ function App() {
 
   return (
     <>
+      <PostsContext.Provider value={posts}>
 
+      </PostsContext.Provider>
     </>
   )
 }
