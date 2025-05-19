@@ -1,11 +1,11 @@
 import React from 'react'
-// importare postList (da creare)
+import PostList from './PostList'
 
 const PostPage = () => {
     return (
         <div>
             <h1>Posts</h1>
-            {/* componente postList */}
+            <PostList />
         </div>
     )
 }
