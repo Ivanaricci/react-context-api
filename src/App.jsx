@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import PostsContext from './Context'
+import PostPage from './PostPage'
 
 
 const posts = [
@@ -31,7 +32,7 @@ function App() {
   return (
     <>
       <PostsContext.Provider value={posts}>
-
+        <PostPage />
       </PostsContext.Provider>
     </>
   )

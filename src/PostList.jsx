@@ -7,8 +7,14 @@ import { useContext } from 'react'
 import PostsContext from './Context'
 
 const PostList = () => {
+
+    const posts = useContexts(PostsContext);
+
+
     return (
-        <div>PostList</div>
+        <div>{posts}</div>
+
+
     )
 }
 
